@@ -29,32 +29,38 @@
         const searchDatabase = [
             {
                 id: 1,
-                keyword: "Automation",
+                keyword: "Sales",
                 videoTitle: "YouTube's Hard, Until Business Owners Do This",
                 videoId: "rkhSjMbrMG4",
                 occurrences: [
-                    { timestamp: 523, text: "...automatically attract new people and nurture old ones without the person having to lift a finger ever again..." },
-                    { timestamp: 632, text: "...the final thing that makes boring business videos work are systems. My company is called Scaling with Systems..." }
+                    { timestamp: 281, text: "...qualified sales calls." },
+                    { timestamp: 342, text: "...months of sales calls..." },
+                    { timestamp: 411, text: "...in their sales calls..." },
+                    { timestamp: 609, text: "...after they booked the sales call..." }
                 ]
             },
             {
                 id: 2,
-                keyword: "Delegation",
+                keyword: "Avatar",
                 videoTitle: "YouTube's Hard, Until Business Owners Do This",
                 videoId: "rkhSjMbrMG4",
                 occurrences: [
-                    { timestamp: 855, text: "...everything else we're going to talk about here involves a little bit of delegation..." },
-                    { timestamp: 866, text: "...but there's one part that you can't delegate and that's you and your expertise..." }
+                    { timestamp: 95, text: "...not your ideal avatar." },
+                    { timestamp: 100, text: "...your ideal avatar." },
+                    { timestamp: 142, text: "...our ideal avatar." },
+                    { timestamp: 888, text: "...attracts your ideal avatar..." }
                 ]
             },
             {
                 id: 3,
-                keyword: "Trust Engine",
+                keyword: "Business",
                 videoTitle: "YouTube's Hard, Until Business Owners Do This",
                 videoId: "rkhSjMbrMG4",
                 occurrences: [
-                    { timestamp: 540, text: "...I know why your marketing isn't working it's because we're in a trust recession a lot about what I'm talking in this video here..." },
-                    { timestamp: 872, text: "...it would kind of remove the whole purpose of building a brand and building trust with your prospects if it was an AI version of you..." }
+                    { timestamp: 1, text: "...profitable for your business?" },
+                    { timestamp: 8, text: "...Most business owners..." },
+                    { timestamp: 163, text: "...What business do I start?" },
+                    { timestamp: 1011, text: "...a bigger business and you just want us..." }
                 ]
             }
         ];
@@ -140,7 +146,7 @@
                                 The Ravi Abuvala Vault
                             </h1>
                             <p className="text-slate-400 text-lg">
-                                Search 1,000+ videos instantly for systems, scaling, and delegation.
+                                Search 1,000+ videos instantly for sales strategy, avatars, and business growth.
                             </p>
                         </div>
 
@@ -154,7 +160,7 @@
                                 <input 
                                     type="text" 
                                     className="w-full bg-transparent p-6 text-xl text-white placeholder-slate-500 focus:outline-none"
-                                    placeholder="Search 'Automation', 'Delegation', or 'Trust Engine'..."
+                                    placeholder="Search 'Sales', 'Avatar', or 'Business'..."
                                     value={query}
                                     onChange={handleSearch}
                                     autoFocus
@@ -217,7 +223,7 @@
                             
                             {!query && (
                                 <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-                                    {['Automation', 'Delegation', 'Trust Engine'].map(tag => (
+                                    {['Sales', 'Avatar', 'Business'].map(tag => (
                                         <button 
                                             key={tag}
                                             onClick={() => {
